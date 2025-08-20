@@ -98,6 +98,8 @@
 
         /* --- Estilos específicos de la página About --- */
         .about-intro {
+             background-color: var(--light-color);
+             background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url('img/team.jpg') no-repeat center center/cover;
             text-align: center;
             padding-bottom: 2rem;
         }
@@ -131,12 +133,13 @@
             margin-top: 3rem;
         }
 
-        .team-member {
-            background-color: var(--light-color);
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Esto las hace redondas */
+    object-fit: cover; /* Esta es la propiedad clave */
+    margin-bottom: 1rem;
+}
         
         .team-member img {
             width: 150px;
@@ -158,12 +161,51 @@
         .footer p {
             margin: 0;
         }
+/* --- Estilos del Contador --- */
+.counter-section {
+    background-color: rgb(33, 33, 124);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.counter-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.counter-box {
+    flex-basis: 30%; /* Ajuste para que se vea bien en varios tamaños */
+}
+
+.counter-box h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+
+.counter-box p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    .counter-box {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
     </style>
 </head>
 <body>
 
     <header class="header">
-        <div class="logo">ReformaPro</div>
+        <div class="logo">NOMBRE EMPRESA</div>
         <nav>
             <ul>
                 <li><a href="index.html">Incio</a></li>
@@ -176,19 +218,40 @@
     <section class="about-intro">
         <div class="container">
             <h1>Expertos en transformar espacios.</h1>
-            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">En ReformaPro, no solo hacemos reformas; creamos hogares. Nos dedicamos a hacer realidad tus proyectos con pasión, profesionalidad y un compromiso total con la calidad.</p>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: white">En ReformaPro, no solo hacemos reformas; creamos hogares. Nos dedicamos a hacer realidad tus proyectos con pasión, profesionalidad y un compromiso total con la calidad.</p>
         </div>
     </section>
+
+    <section class="counter-section">
+    <div class="container">
+        <div class="counter-grid">
+            <div class="counter-box">
+                <h3 class="counter-value" data-target="50">0</h3>
+                <p>Proyectos Completados</p>
+            </div>
+            <div class="counter-box">
+                <h3 class="counter-value" data-target="10">0</h3>
+                <p>Años de Experiencia</p>
+            </div>
+            <div class="counter-box">
+                <h3 class="counter-value" data-target="100">0</h3>
+                <p>Clientes Satisfechos</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section class="mission-vision">
         <div class="container">
             <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 2rem;">Nuestra Misión y Visión</h2>
             <div class="content-grid">
-                <div>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="img/mision.jpg" alt="mision" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
                     <h3 style="color: var(--primary-color);">Nuestra Misión</h3>
                     <p>Ser el socio de confianza de nuestros clientes, ofreciendo soluciones de reforma integrales y personalizadas que superen sus expectativas. Nos comprometemos a entregar cada proyecto con los más altos estándares de calidad, transparencia y eficiencia.</p>
                 </div>
-                <div>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/vision.jpg" alt="vision" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
                     <h3 style="color: var(--primary-color);">Nuestra Visión</h3>
                     <p>Convertirnos en la empresa líder en el sector de las reformas, reconocida por nuestra innovación, sostenibilidad y por el valor duradero que aportamos a cada espacio y a la vida de las personas que los habitan.</p>
                 </div>
@@ -201,18 +264,18 @@
             <h2 style="font-size: 2.5rem;">Conoce a Nuestro Equipo</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Foto de John Doe">
+                    <img src="img/paco.jpg" alt="Foto de John Doe">
                     <h3 style="margin-bottom: 0;">John Doe</h3>
                     <p>Fundador y Director de Proyectos</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Foto de Jane Smith">
+                    <img src="img/maria.jpg" alt="Foto de Jane Smith">
                     <h3 style="margin-bottom: 0;">Jane Smith</h3>
                     <p>Jefa de Diseño de Interiores</p>
                 </div>
                 <div class="team-member">
-                    <img src="https://images.pexels.com/photos/1179421/pexels-photo-1179421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Foto de Michael Johnson">
-                    <h3 style="margin-bottom: 0;">Michael Johnson</h3>
+                    <img src="img/luisa.jpg" alt="Foto de Michael Johnson">
+                    <h3 style="margin-bottom: 0;">Sarah Johnson</h3>
                     <p>Coordinador de Obra</p>
                 </div>
             </div>
@@ -224,4 +287,31 @@
     </footer>
 
 </body>
+
+<script>
+    const counters = document.querySelectorAll('.counter-value');
+    const speed = 200; // La velocidad del contador, cuanto más bajo, más rápido
+
+    counters.forEach(counter => {
+        const updateCount = () => {
+            // Obtener el número final del atributo 'data-target'
+            const target = +counter.getAttribute('data-target');
+            // Obtener el valor actual
+            const count = +counter.innerText;
+
+            // Calcular el incremento
+            const increment = target / speed;
+
+            // Si el valor actual es menor que el objetivo, seguir contando
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target;
+            }
+        };
+        updateCount();
+    });
+</script>
+
 </html>
