@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ReformaPro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Estilos Generales --- */
+        :root {
+            --primary-color: #0d47a1; /* Azul vibrante */
+            --dark-color: #2c3e50; /* Gris oscuro */
+            --light-color: #f8f9fa; /* Gris muy claro */
+            --text-color: #555;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: white;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-color);
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #1976d2;
+            transform: translateY(-2px);
+        }
+
+        /* --- Encabezado --- */
+        .header {
+            background-color: white;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .header nav ul li {
+            margin-left: 35px;
+        }
+
+        .header nav ul li a {
+            color: var(--dark-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .header nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- Estilos específicos de la página Contacto --- */
+        .contact-intro {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            align-items: center;
+            background-color: var(--light-color);
+            padding: 4rem;
+            border-radius: 10px;
+        }
+        
+        .contact-info {
+            text-align: left;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-form {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .contact-form label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+        }
+        
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .contact-form .submit-button {
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* --- Pie de página --- */
+        .footer {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            text-align: center;
+            padding: 3rem;
+            margin-top: 0;
+        }
+        
+        .footer p {
+            margin: 0;
+        }
+
+        /* Ajustes para móviles */
+        @media (min-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr 1.5fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">ReformaPro</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Incio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-intro">
+        <div class="container">
+            <h1 style="font-size: 3rem;">Hablemos de tu Proyecto</h1>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Estamos aquí para escucharte y ayudarte a hacer realidad tus ideas. Completa el formulario o contáctanos directamente.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3 style="font-size: 2rem;">Información de Contacto</h3>
+                <p>Puedes contactarnos por teléfono o email, o visitar nuestra oficina. ¡Estaremos encantados de atenderte!</p>
+                <p><strong>Email:</strong> info@reformasprofesionales.com</p>
+                <p><strong>Teléfono:</strong> +34 123 45 67 89</p>
+                <p><strong>Dirección:</strong> Calle Falsa 123, 08001 Barcelona</p>
+            </div>
+            <div class="contact-form">
+                <h3 style="margin-top: 0;">Envíanos un Mensaje</h3>
+                <form action="#" method="POST">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit" class="button submit-button">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 ReformaPro. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - ReformaPro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Estilos Generales --- */
+        :root {
+            --primary-color: #0d47a1; /* Azul vibrante */
+            --dark-color: #2c3e50; /* Gris oscuro */
+            --light-color: #f8f9fa; /* Gris muy claro */
+            --text-color: #555;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: white;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-color);
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #1976d2;
+            transform: translateY(-2px);
+        }
+
+        /* --- Encabezado --- */
+        .header {
+            background-color: white;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .header nav ul li {
+            margin-left: 35px;
+        }
+
+        .header nav ul li a {
+            color: var(--dark-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .header nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- Estilos específicos de la página About --- */
+        .about-intro {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+
+        .about-intro h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        
+        .mission-vision {
+            background-color: var(--light-color);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .mission-vision .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            text-align: left;
+        }
+        
+        .team-section {
+            text-align: center;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .team-member {
+            background-color: var(--light-color);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        /* --- Pie de página --- */
+        .footer {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            text-align: center;
+            padding: 3rem;
+            margin-top: 0;
+        }
+        
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">ReformaPro</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Incio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-intro">
+        <div class="container">
+            <h1>Expertos en transformar espacios.</h1>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">En ReformaPro, no solo hacemos reformas; creamos hogares. Nos dedicamos a hacer realidad tus proyectos con pasión, profesionalidad y un compromiso total con la calidad.</p>
+        </div>
+    </section>
+
+    <section class="mission-vision">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 2rem;">Nuestra Misión y Visión</h2>
+            <div class="content-grid">
+                <div>
+                    <h3 style="color: var(--primary-color);">Nuestra Misión</h3>
+                    <p>Ser el socio de confianza de nuestros clientes, ofreciendo soluciones de reforma integrales y personalizadas que superen sus expectativas. Nos comprometemos a entregar cada proyecto con los más altos estándares de calidad, transparencia y eficiencia.</p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary-color);">Nuestra Visión</h3>
+                    <p>Convertirnos en la empresa líder en el sector de las reformas, reconocida por nuestra innovación, sostenibilidad y por el valor duradero que aportamos a cada espacio y a la vida de las personas que los habitan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <h2 style="font-size: 2.5rem;">Conoce a Nuestro Equipo</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Foto de John Doe">
+                    <h3 style="margin-bottom: 0;">John Doe</h3>
+                    <p>Fundador y Director de Proyectos</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Foto de Jane Smith">
+                    <h3 style="margin-bottom: 0;">Jane Smith</h3>
+                    <p>Jefa de Diseño de Interiores</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.pexels.com/photos/1179421/pexels-photo-1179421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200" alt="Foto de Michael Johnson">
+                    <h3 style="margin-bottom: 0;">Michael Johnson</h3>
+                    <p>Coordinador de Obra</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 ReformaPro. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
